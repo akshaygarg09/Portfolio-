@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Kumar's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script> <!-- Link to script.js file -->
+    <style>
+        /* CSS for styling the portfolio */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        header {
+            background-color: #1E1E1E;
+            text-align: center;
+            padding: 20px;
+        }
+        .profile {
+            margin-bottom: 20px;
+        }
+        .profile-image {
+            width: 150px;
+            border-radius: 50%;
+        }
+        nav {
+            background-color: #292929;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #F1C40F;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            background-color: #333;
+            min-height: 80vh;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1E1E1E;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="Aksh.jpg" alt="Akshay Kumar" class="profile-image">
+            <h1>Akshay Kumar</h1>
+            <h2>Software Engineer | Web Developer | Freelancer</h2>
+            <div class="social-links">
+                <a href="https://github.com/akshaygarg09">GitHub</a>
+                <a href="https://www.linkedin.com/in/akshay-garg314417256/">LinkedIn</a>
+                <a href="https://twitter.com/">Twitter</a>
+                <a href="https://leetcode.com/">LeetCode</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+            </div>
+            <a href="AkshayKumarResume.pdf" class="download-cv">Download CV</a>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About Me</a></li>
+            <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+            <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#" onclick="showSection('achievements')">Achievements</a></li>
+            <li><a href="#" onclick="showSection('services')">Services</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="home" class="section">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi! I am Akshay Kumar, a passionate software engineer eager to make an impact in the tech world.</p>
+        </div>
+
+        <div id="about" class="section" style="display:none;">
+            <h1>About Me</h1>
+            <p>Hello! I am Akshay Kumar, a passionate software engineer with a strong foundation in computer science. I am currently pursuing my B.Tech degree and am eager to apply my skills in real-world projects. My interests lie in web development, AI, and contributing to impactful tech solutions.</p>
+        </div>
+
+        <div id="skills" class="section" style="display:none;">
+            <h1>Skills</h1>
+            <ul>
+                <li>Programming Languages: C, C++, Java, JavaScript, Python</li>
+                <li>Web Technologies: HTML, CSS, React.JS</li>
+                <li>Database Management: MySQL, SQL</li>
+                <li>3D Modeling & Animation: Blender</li>
+                <li>Hardware Communication: Microcontroller, Microprocessor, IoT</li>
+                <li>Course Subjects: Database Management, Operating Systems</li>
+            </ul>
+        </div>
+
+        <div id="projects" class="section" style="display:none;">
+            <h1>Projects</h1>
+            <div class="project">
+                <h3>Heart Disease Prediction Project</h3>
+                <p>This project utilizes machine learning algorithms to predict the likelihood of heart disease based on patient data. My role involved data analysis, model selection, and implementation using Python and relevant libraries.</p>
+                <img src="heart_disease_project.jpg" alt="Heart Disease Project" style="width:100%;max-width:600px;">
+            </div>
+            <div class="project">
+                <h3>Arthropod</h3>
+                <p>The Arthropod project involved creating a software solution for biological research. I was responsible for developing user interfaces and integrating data collection features.</p>
+                <img src="arthropod_project.jpg" alt="Arthropod Project" style="width:100%;max-width:600px;">
+            </div>
+            <div class="project">
+                <h3>Line Follower Robot</h3>
+                <p>This project demonstrates a robot that follows a predetermined path using sensor inputs. I designed the circuit and programmed the microcontroller to control the robot's movements.</p>
+                <img src="line_follower_robot.jpg" alt="Line Follower Robot" style="width:100%;max-width:600px;">
+            </div>
+        </div>
+
+        <div id="achievements" class="section" style="display:none;">
+            <h1>Achievements & Extracurricular Activities</h1>
+            <p>I have participated in several hackathons, including HackaversuMM'22 and Technoxian 2023, where I showcased my skills in team collaboration and innovative problem-solving.</p>
+            <p>As a member of the Robotronics Club, I held leadership positions that helped me develop my organizational and project management skills.</p>
+        </div>
+
+        <div id="services" class="section" style="display:none;">
+            <h1>Services</h1>
+            <p>I offer a range of services including:</p>
+            <ul>
+                <li>Web Development</li>
+                <li>Mobile App Development</li>
+                <li>Software Engineering</li>
+                <li>Consulting and Technical Support</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="section" style="display:none;">
+            <h1>Contact Me</h1>
+            <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:gargakshay297@gmail.com">gargakshay297@gmail.com</a>.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Akshay Kumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
